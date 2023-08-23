@@ -1,0 +1,12 @@
+<div class="product-update-container">
+  <h2>Update Product</h2>
+  <form (ngSubmit)="updateProduct()">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" name="productName" [(ngModel)]="product.name" required>
+
+    <label for="productQuantity">Quantity:</label>
+    <input type="number" id="productQuantity" name="productQuantity" [(ngModel)]="product.quantity" required>
+
+    <button type="submit">Update Product</button>
+  </form>
+</div>
