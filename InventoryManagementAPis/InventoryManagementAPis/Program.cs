@@ -1,5 +1,6 @@
 using InventoryManagementAPis.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,20 @@ builder.Services.AddCors(c =>
 {
     c.AddPolicy("AllowOrigin", option => option.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
+//builder.Services.Configure<TwilioService>(builder.Configuration.GetSection("Twilio"));
+//builder.Services.AddTransient<TwilioService>();
+//var twilioSettings = builder.Configuration.GetSection("Twilio").Get<TwilioSettings>();
+//var whatsAppMessageSettings = builder.Configuration.GetSection("WhatsAppMessage").Get<WhatsAppMessageModel>();
+
+//builder.Services.AddTransient<TwilioService>(sp =>
+//{
+//    return new TwilioService(
+//        twilioSettings.AccountSid,
+//        twilioSettings.AuthToken,
+//        twilioSettings.PhoneNumber
+//    );
+//});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

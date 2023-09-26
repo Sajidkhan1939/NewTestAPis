@@ -141,7 +141,5 @@ namespace InventoryManagementAPis.Controllers
 
             return Ok(purchase);
         }
-
-
     }
 }

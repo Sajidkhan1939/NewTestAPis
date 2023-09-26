@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from './product';
 import { HttpResponse } from '@angular/common/http';
+import { Sale } from './sale';
+import { Purchase } from './purchase';
 @Injectable({
   providedIn: 'root'
 })
@@ -28,6 +30,13 @@ export class ProductService {
   deleteProduct(productId: number): Observable<void> {
     const url = `${this.baseUrl}/${productId}`;
     return this.http.delete<void>(url);
+  }
+  recordSale(sales: Sale): Observable<Sale> {
+    return this.http.post<Sale>(`${this.baseUrl}/RecordSale`, sales);
+  }
+  
+  trackPurchase(purchased: Purchase): Observable<Purchase> {
+    return this.http.post<Purchase>(`${this.baseUrl}/TrackPurchase`, purchased);
   }
 
 }

@@ -85,3 +85,5 @@ E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagement
 E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagementAPis\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagementAPis\bin\Debug\net6.0\System.Text.Json.dll
 E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagementAPis\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagementAPis\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Dot Net Core  Project\NewTestAPis\InventoryManagementAPis\InventoryManagementAPis\bin\Debug\net6.0\Twilio.dll

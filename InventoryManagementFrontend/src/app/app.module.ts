@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { ProductUpdateComponent } from './product-update/product-update.component';
 import { FormsModule } from '@angular/forms';
+import { SalesComponent } from './sales/sales.component';
+import { PurchaseComponent } from './purchase/purchase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductlistComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    SalesComponent,
+    PurchaseComponent
   ],
   imports: [
     BrowserModule,

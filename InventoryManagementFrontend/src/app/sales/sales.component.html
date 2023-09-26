@@ -1,0 +1,12 @@
+<div>
+  <label for="productId">Product ID:</label>
+  <input type="number" id="productId" [(ngModel)]="sale.ProductId">
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" [(ngModel)]="sale.Quantity">
+
+  <label for="saleDate">Sale Date:</label>
+  <input type="date" id="saleDate" [(ngModel)]="sale.SaleDate">
+
+  <button (click)="recordSale()">Record Sale</button>
+</div>
